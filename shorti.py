@@ -23,8 +23,7 @@ def shorti_save():
 	short=request.form['short']
 	db=jdb.loadDB()
 	if short.isdigit():
-		logging.info("redirect to "+db["shortlinks"].get(short))
-		return redirect(db["shortlinks"].get(short), code=302)
+		return redirectit(short)
 	else:
 		if "http" not in short:
 			short="https://"+short
@@ -37,6 +36,10 @@ def shorti_save():
 
 @app.route('/<string:short>')
 def shorts(short):
+	return redirectit(short)
+	
+
+def redirectit(short):
 	#loadDB
 	logging.info("load DB")
 	db=jdb.loadDB()
@@ -44,9 +47,10 @@ def shorts(short):
 	if short in db["shortlinks"].keys():
 		logging.info("redirect to "+db["shortlinks"].get(short))
 		return redirect(db["shortlinks"].get(short), code=302)
-	logging.error("no url for that short")
-	return "Shortipy Error..."
-
+	else:
+		logging.error("no url for that short")
+		return render_template('layout.html', message="no url saved for that shortcode")
+	
 
 
 if __name__ == '__main__':
