@@ -10,7 +10,7 @@ db - Helpers
 import json
 
 def loadDB():
-    #print("loadDB()")
+    #TODO if not exist create!
     res={}
     with open('./data/db.json', 'r') as fp:
         res = json.load(fp)
