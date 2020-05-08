@@ -3,7 +3,7 @@ URL Shortener in python based on flask
 
 # preview
 
-![shortipy](https://ibb.co/1K6sMZ9)
+![shortipy](https://i.ibb.co/WFtD0nc/sp.jpg)
 
 # info
 
