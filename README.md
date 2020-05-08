@@ -5,11 +5,19 @@ URL Shortener in python based on flask
 
 ![shortipy](https://i.ibb.co/WFtD0nc/sp.jpg)
 
+# features
+
+* create shortlink by enter a domain to the input field. and you will get a 4 digit number
+* use shortlink by enter this shortlink to the input field or
+* use shortlink yourdomain.com/1234
+
 # info
 
 * volume mount container path /shortipy/data to persist your DB.
 * shortipy runs on port 4321: map the port 4321 to any port you like
 * use /start.sh as entrypoint
+
+
 
 # run
 
