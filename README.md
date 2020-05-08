@@ -3,9 +3,9 @@ URL Shortener in python based on flask
 
 # info
 
-volume mount container path /shortipy/data to persist your DB.
-shortipy runs on port 4321: map the port 4321 to any port you like
-use /start.sh as entrypoint
+* volume mount container path /shortipy/data to persist your DB.
+* shortipy runs on port 4321: map the port 4321 to any port you like
+* use /start.sh as entrypoint
 
 # run
 
