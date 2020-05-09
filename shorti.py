@@ -32,7 +32,7 @@ def shorti_save():
 		logging.info("adding "+str(r)+" with "+short+" to db")
 		dbdict[r]=short
 		jdb.writeDB(db)
-		shorturl=request.base_url+str(r)
+		shorturl=request.url_root+str(r)
 		return render_template('layout.html', message="link saved: "+shorturl, shorturl=shorturl)
 
 @app.route('/<string:short>')
