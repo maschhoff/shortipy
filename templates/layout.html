@@ -35,10 +35,13 @@
     
       
           {% if message %}
-          <div class="alert alert-primary" role="alert">
+          <div class="alert alert-secondary" role="alert">
             {{ message }}
+            <p hidden id="p1">{{ shorturl }}</p>
+            <button class="btn btn-secondary" onclick="copyToClipboard('p1')"><ion-icon name="copy"></ion-icon></button>
           </div>
           {% endif %}
+
           
    <br/><br/><br/><br/><br/><br/><br/><br/>
          
@@ -54,12 +57,12 @@
             <div class="row">
             <div class="col" align="right">
               <div class="form-group">
-            <button type="submit" class="btn btn-primary"><ion-icon name="search"></ion-icon></button>
+            <button type="submit" class="btn btn-secondary"><ion-icon name="search"></ion-icon></button>
               </div>
             </div>
             <div class="col">
               <div class="form-group">
-            <button type="submit" class="btn btn-primary"><ion-icon name="add-circle"></ion-icon></button>
+            <button type="submit" class="btn btn-secondary"><ion-icon name="add-circle"></ion-icon></button>
               </div>
             </div>
           </div>
@@ -76,6 +79,31 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+   <!-- https://stackoverflow.com/questions/22581345/click-button-copy-to-clipboard-using-jquery -->
+  <script language="javascript" type="text/javascript">
+   
+                  function copyToClipboard(elementId) {
+
+              // Create a "hidden" input
+              var aux = document.createElement("input");
+
+              // Assign it the value of the specified element
+              aux.setAttribute("value", document.getElementById(elementId).innerHTML);
+
+              // Append it to the body
+              document.body.appendChild(aux);
+
+              // Highlight its content
+              aux.select();
+
+              // Copy the highlighted text
+              document.execCommand("copy");
+
+              // Remove it from the body
+              document.body.removeChild(aux);
+
+              }
+  </script>
 </body>
 </html>

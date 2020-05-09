@@ -1,5 +1,5 @@
 body { 
-  background: #ffffff;
+  background: #2b2929;
   background-image: url("https://source.unsplash.com/random/1920x1080/?nature");
   background-repeat:no-repeat;
   background-size:cover;
@@ -12,7 +12,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .bg-steel {
-  background-color: #9baabe;
+  background-color: #3c4955;
   opacity: 0.6;
 }
 
@@ -41,7 +41,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a.article-title:hover {
-  color: #428bca;
+  color: #3c4955;
   text-decoration: none;
 }
 
