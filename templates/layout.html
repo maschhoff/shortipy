@@ -37,7 +37,7 @@
           {% if message %}
           <div class="alert alert-secondary" role="alert">
             {{ message }}
-            <p hidden id="p1">{{ shorturl }}</p>
+            <p hidden id="p1"></p>
             <button class="btn btn-secondary" onclick="copyToClipboard('p1')"><ion-icon name="copy"></ion-icon></button>
           </div>
           {% endif %}
@@ -83,6 +83,11 @@
    <!-- https://stackoverflow.com/questions/22581345/click-button-copy-to-clipboard-using-jquery -->
   <script language="javascript" type="text/javascript">
    
+              document.getElementById("p1").innerHTML = 
+              window.location.href+{{ shorturl }};
+
+   
+
                   function copyToClipboard(elementId) {
 
               // Create a "hidden" input
