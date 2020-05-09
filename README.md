@@ -11,19 +11,27 @@ URL Shortener in python based on flask
 * use shortlink by enter this shortlink to the input field or
 * use shortlink yourdomain.com/1234
 
-# info
+# run as docker
 
+## info
+
+* pull from dockerhub knex666/shortipy 
 * volume mount container path /shortipy/data to persist your DB.
 * shortipy runs on port 4321: map the port 4321 to any port you like
 * or use a reverse proxy
 * use /start.sh as entrypoint
 
 
-
-# run
+## run
 
    docker run -d --name='shortipy' -v '/home/user/shortipy':'/shortipy/data':'rw' 'knex666/shortipy' /start.sh
 
+# run on system
+
+* install python >3
+* pull from github
+* python -m pip install -r requirements.txt
+* python shorti.py
 
 # donate
 Buy me a Pizza -> https://www.buymeacoffee.com/maschhoff
