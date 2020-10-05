@@ -1,13 +1,15 @@
 body { 
+  color: #852222;
+  margin-top: 5rem;
+}
+
+.background-image {
+    filter: blur(8px);
+  -webkit-filter: blur(8px);
   background: #2b2929;
   background-image: url("https://source.unsplash.com/random/1920x1080/?nature");
   background-repeat:no-repeat;
   background-size:cover;
-   /* Add the blur effect */
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
-  color: #852222;
-  margin-top: 5rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
