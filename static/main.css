@@ -3,6 +3,9 @@ body {
   background-image: url("https://source.unsplash.com/random/1920x1080/?nature");
   background-repeat:no-repeat;
   background-size:cover;
+   /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
   color: #852222;
   margin-top: 5rem;
 }
