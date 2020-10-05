@@ -1,18 +1,14 @@
 body { 
   color: #852222;
   margin-top: 5rem;
-}
-
-.bgimage {
-
-  background: #2b2929;
+   background: #2b2929;
   background-image: url("https://source.unsplash.com/random/1920x1080/?nature");
   background-repeat:no-repeat;
   background-size:cover;
-      filter: blur(8px);
-  -webkit-filter: blur(8px);
 }
 
+ 
+    
 h1, h2, h3, h4, h5, h6 {
   color: #444444;
 }
