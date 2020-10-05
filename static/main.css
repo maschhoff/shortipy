@@ -3,7 +3,7 @@ body {
   margin-top: 5rem;
 }
 
-body:before {
+.bgimage {
 
   background: #2b2929;
   background-image: url("https://source.unsplash.com/random/1920x1080/?nature");
