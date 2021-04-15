@@ -67,4 +67,4 @@ _\| |(_)|  | ||_)\/
 
 	""")
 
-	app.run(host='0.0.0.0',port=4321,debug=True)
+	app.run(host='0.0.0.0',port=4321,debug=False)
