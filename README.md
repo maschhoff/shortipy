@@ -31,7 +31,7 @@ URL Shortener in python based on flask
 * install python >3
 * pull from github
 * python -m pip install -r requirements.txt
-* python shorti.py
+* python shorti.py or run uwsgi app.ini
 
 # donate
 Buy me a Pizza -> https://www.buymeacoffee.com/maschhoff
