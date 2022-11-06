@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
+# docker build -t knex666/shortipy:latest .
 FROM python
-RUN python -V
 WORKDIR /source
 ENV FLASK_APP=shorti.py
 ENV FLASK_RUN_HOST=0.0.0.0
