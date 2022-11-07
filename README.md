@@ -24,7 +24,7 @@ URL Shortener in python based on flask
 
 ## run
 
-   docker run -d --name='shortipy' -v '/home/user/shortipy':'/shortipy/data':'rw' 'knex666/shortipy' /start.sh
+   docker run -d --name='shortipy' -v '/home/user/shortipy':'/shortipy/data':'rw' 'knex666/shortipy'
 
 # run on system
 
