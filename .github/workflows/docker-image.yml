@@ -17,5 +17,6 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag knex666/shortipy:latest-dev
     - name: login and push
-      run: docker login -u knex666 -p ${{secrets.DOCKER_HUB_TOKEN}}
-           docker push knex666/shortipy:latest-dev
+      run: |
+            docker login -u knex666 -p ${{secrets.DOCKER_HUB_TOKEN}} 
+            docker push knex666/shortipy:latest-dev
