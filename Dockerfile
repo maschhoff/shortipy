@@ -8,4 +8,4 @@ ENV FLASK_RUN_PORT=4321
 COPY ./ /source
 RUN apt-get update && apt-get install build-essential python3-dev -y
 RUN pip3 install -r /source/requirements.txt
-CMD ["flask", "run"]
+CMD ["uwsgi", "app.ini"]
